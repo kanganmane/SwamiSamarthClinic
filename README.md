@@ -1,4 +1,4 @@
-# 🏥 Balaji Clinic Website
+# 🏥 Balaji Clinic
 
 ## 📌 Project Description
 
