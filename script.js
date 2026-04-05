@@ -3,6 +3,10 @@ const ham = document.getElementById("ham");
 const cross = document.getElementById("cross");
 const mobilebar = document.getElementById("mobilebar");
 
+window.addEventListener("load", () => {
+  document.getElementById("body").classList.remove("opacity-0","scale-0");
+});
+
 let isTrue = false;
 hamit.addEventListener("click", ()=>{
     isTrue = !isTrue;
