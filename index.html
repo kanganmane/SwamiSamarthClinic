@@ -11,19 +11,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Balaji Clinic</title>
 </head>
-<body class="w-full overflow-hidden text-black bg-[#f9f9f9] font-poppins ">
-  <nav class="flex justify-between items-center py-6 sm:px-10 px-6 ">
+<body class="w-full overflow-x-hidden text-black bg-[#f9f9f9] font-poppins transition delay-100">
+  <nav class=" absolute  flex justify-between items-center py-6 sm:px-10 px-6 w-full">
     <h1 class="bg-white group p-2 rounded-lg backdrop-blur-lg shadow shadow-gray-200 text-xl font-semibold cursor-pointer">
       <a href="#home" class="transition inline-block delay-50 ease-out transform-gpu group-hover:scale-90 text-[#173401] font-bold">Balaji Clinic</a>
     </h1>
-    <ul class="hidden list-none sm:flex p-2.5 px-4 rounded-full gap-6 bg-white text-md font-semibold shadow shadow-gray-200">
+    <ul class="hidden list-none md:flex p-2.5 px-4 rounded-full gap-6 bg-white text-md font-semibold shadow shadow-gray-200">
       <li><a href="#about">About</a></li>
       <li><a href="services">Services</a></li>
       <li><a href="testimonials">Testimonials</a></li>
       <li><a href="contact">Contact</a></li>
     </ul>
-    <button class="bg-[#9FE870] p-2.5 hover:bg-[#173401] hover:text-white font-medium transition delay-150 rounded-2xl ">Book Appointment <i class="fa-solid fa-arrow-right"></i></button>
-    <div id="hamit" class="sm:hidden flex justify-center items-center cursor-pointer relative">
+    <button class="hidden lg:flex bg-[#9FE870] p-2.5 hover:bg-[#173401] hover:text-white font-medium transition delay-150 rounded-xl ">Book Appointment</button>
+    <div id="hamit" class="md:hidden flex justify-center items-center cursor-pointer relative">
       <i id="ham" class="fa-solid fa-bars text-2xl absolute right-2"></i>
       <i id="cross" class="fa-solid fa-xmark text-2xl opacity-0 absolute right-2"></i>
     </div>
@@ -36,8 +36,19 @@
     <li><a href="contact">Contact</a></li>
   </ul>
   </div>
-  <section id="home">
-
+  <section id="home relative" class="flex flex-col py-30 lg:py-15 px-6 justify-center items-center md:flex md:flex-row md:justify-between">
+    <div class="p-4 flex flex-col gap-6 xl:gap-10 text-start xl:p-20 xl:w-[60%]">
+      <h1 class="font-bold text-[36px] sm:text-[40px] lg:text-5xl ">Compassionate Care,<br>
+        <span class="text-[#509426]">Personalized</span> for You</h1>
+      <p class="font-light text-justify">Dr. Deepak Powar brings 18+ years of experience in providing quality healthcare. He is committed to ensuring patient well-being through modern treatment methods and compassionate care.</p>
+      <div class="flex space-x-6">
+        <button class="bg-[#9FE870] p-2.5 hover:bg-[#173401] hover:text-white font-medium transition delay-150 rounded-lg text-lg ">Book Appointment</button>
+        <button class="bg-white p-2.5 hover:bg-gray-400 hover:text-white font-normal transition shadow shadow-gray-200 delay-150 text-md rounded-lg ">Learn More</button>
+      </div>
+    </div>
+    <div class="xl:p-20 p-4 flex justify-center items-center">
+      <img src="Dhanvantari.webp" alt="Dhanvantari" class="rounded-lg xl:w-[90%]" />
+    </div>
   </section>
   <script src="script.js"></script>
 </body>
