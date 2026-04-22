@@ -39,10 +39,10 @@
 
   function toggleMenu() {
     const open = ham.classList.toggle('open');
-    bars[0].style.transform = open ? 'translateY(6.5px) rotate(45deg)' : '';
+    bars[0].style.transform = open ? 'translateY(6.5px)  rotate(45deg)' : '';
     bars[1].style.opacity   = open ? '0' : '1';
-    bars[2].style.transform = open ? 'translateY(-6.5px) rotate(-45deg)' : '';
-    mobMenu.classList.toggle('translate-x-full', !open);
+    bars[2].style.transform = open ? 'translateY(-6.5px)  rotate(-45deg)' : '';
+    mobMenu.classList.toggle('translate-x-full ', !open);
     document.body.style.overflow = open ? 'hidden' : '';
   }
 
