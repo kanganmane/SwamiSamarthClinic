@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Balaji Clinic — Dr. Deepak Powar | Compassionate Care, Personalized for You</title>
+  <title>Swami Samarth Clinic — Dr. Deepak Powar | Compassionate Care, Personalized for You</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,7 +25,7 @@
             lightgreen:'#A5D6A7',
             accent:   '#76C442',
             softbg:   '#FFFFFF',
-            pagebg:   '#F8F9FA',
+            pagebg:   '#F9F9F9',
             divider:  '#E8F5E9',
             textdark: '#111827',
             textmid:  '#374151',
@@ -55,52 +56,7 @@
       }
     }
   </script>
-
-  <style>
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-
-    .nav-underline::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: #4CAF50;
-      transition: width 0.25s ease;
-    }
-    .nav-underline:hover::after,
-    .nav-underline.active::after { width: 100%; }
-    .nav-underline.active { color: #1B5E20 !important; font-weight: 600; }
-
-    .service-card:hover .service-icon { transform: scale(1.12) rotate(6deg); }
-    .service-icon { transition: transform 0.3s ease; }
-
-    .step-line::after {
-      content: '';
-      position: absolute;
-      top: 1.5rem;
-      right: -50%;
-      width: 100%;
-      height: 2px;
-      background: linear-gradient(to right, #4CAF50, #A5D6A7);
-    }
-
-    input:focus, textarea:focus, select:focus {
-      outline: none;
-      border-color: #4CAF50;
-      box-shadow: 0 0 0 3px rgba(76,175,80,0.15);
-    }
-
-    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; }
-    .faq-item.open .faq-a { padding-bottom: 1.25rem; }
-    .faq-arrow { transition: all 0.3s ease; }
-
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-track { background: #f1f1f1; }
-    ::-webkit-scrollbar-thumb { background: #4CAF50; border-radius: 3px; }
-  </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="font-sans bg-pagebg text-textdark overflow-x-hidden leading-relaxed">
@@ -108,7 +64,7 @@
 <!-- ═══════════════════════════════════════
      NAVBAR
 ═══════════════════════════════════════ -->
-<nav id="nav" class="fixed top-0 inset-x-0 z-100 bg-white py-4 transition-all duration-300 animate-fadeDown border-b border-transparent">
+<nav id="nav" class="fixed  top-0 inset-x-0 z-50 bg-white py-4 transition-all duration-300 animate-fadeDown border-b border-transparent">
   <div class="max-w-328 mx-auto px-6 md:px-12 flex items-center justify-between">
 
     <!-- Logo -->
@@ -116,7 +72,7 @@
       <div class="w-9 h-9 rounded-lg bg-darkgreen flex items-center justify-center">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
       </div>
-      <span class="font-bold text-[1.15rem] text-textdark tracking-tight">Balaji Clinic</span>
+      <span class="font-bold text-[1.15rem] text-textdark tracking-tight">Swami Samarth Clinic</span>
     </a>
 
     <!-- Desktop links -->
@@ -165,11 +121,7 @@
 
     <!-- Left: headline & CTA -->
     <div class="animate-fadeUp">
-      <!-- Badge -->
-      <div class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-green/10 text-midgreen text-sm font-semibold border border-green/25 mb-6">
-        <div class="w-2 h-2 rounded-full bg-green animate-blink"></div>
-        Now Accepting New Patients
-      </div>
+      
 
       <h1 class="font-black text-[clamp(2rem,4.5vw,3.6rem)] leading-[1.08] text-textdark mb-2 tracking-tight">
         Compassionate Care,
@@ -196,9 +148,9 @@
 
     <!-- Right: hero image -->
     <div class="relative animate-fadeScale">
-      <div class="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)] relative z-10 group aspect-4/3 md:aspect-4/3">
+      <div class="rounded-2xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)] relative group aspect-4/3 md:aspect-4/3">
         <img src="Dhanvantari.webp" alt="Balaji Clinic"
-             class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+             class="w-full h-full object-cover  transition-transform duration-700 group-hover:scale-105"
              onerror="this.parentElement.style.background='linear-gradient(135deg,#e8f5e9 0%,#a5d6a7 50%,#4caf50 100%)';this.remove();" />
       </div>
       <!-- Decorative blobs -->
@@ -214,7 +166,7 @@
 ═══════════════════════════════════════ -->
 <section id="stats" class="bg-darkgreen py-12">
   <div class="max-w-328 mx-auto px-6 md:px-12">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <div class="flex justify-around  gap-8 text-center">
       <div>
         <div class="font-black text-4xl text-green leading-none">15+</div>
         <div class="text-[.78rem] text-white/60 mt-2 font-semibold tracking-[.06em] uppercase">Years of Experience</div>
@@ -227,10 +179,7 @@
         <div class="font-black text-4xl text-green leading-none">Same-day</div>
         <div class="text-[.78rem] text-white/60 mt-2 font-semibold tracking-[.06em] uppercase">Urgent Appointments</div>
       </div>
-      <div>
-        <div class="font-black text-4xl text-green leading-none">4.9 ★</div>
-        <div class="text-[.78rem] text-white/60 mt-2 font-semibold tracking-[.06em] uppercase">Patient Rating</div>
-      </div>
+      
     </div>
   </div>
 </section>
@@ -279,7 +228,7 @@
       <!-- Credentials -->
       <div class="flex flex-wrap gap-6 mt-8 pt-8 border-t border-divider">
         <div>
-          <div class="font-bold text-sm text-textdark mb-1">MBBS, MD</div>
+          <div class="font-bold text-sm text-textdark mb-1">BAMS</div>
           <div class="text-[.82rem] text-textsoft">General Medicine</div>
         </div>
         <div class="hidden sm:block w-px bg-divider"></div>
@@ -306,7 +255,7 @@
 <!-- ═══════════════════════════════════════
      HOW IT WORKS
 ═══════════════════════════════════════ -->
-<section id="how" class="py-24 bg-pagebg">
+<!-- <section id="how" class="py-24 bg-pagebg">
   <div class="max-w-328 mx-auto px-6 md:px-12">
     <div class="text-center max-w-xl mx-auto mb-14">
       <p class="text-[.72rem] font-bold tracking-[.14em] uppercase text-green mb-3">Your First Visit</p>
@@ -351,7 +300,7 @@
 
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- ═══════════════════════════════════════
      SERVICES
@@ -366,31 +315,8 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
+
       <!-- Service 1 -->
-      <div class="service-card bg-pagebg p-8 rounded-2xl border border-divider group transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-green/40 cursor-default">
-        <div class="service-icon  w-12 h-12 rounded-xl bg-green/15 flex items-center justify-center mb-5 text-midgreen">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3 class="font-bold text-[1.05rem] text-textdark mb-2">Preventive Healthcare</h3>
-        <p class="text-[.9rem] text-textsoft leading-[1.75]">
-          Annual health check-ups, vaccinations, cancer screenings, blood panels,
-          and personalized wellness plans to keep you ahead of illness.
-        </p>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="service-card bg-pagebg p-8 rounded-2xl border border-divider group transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-green/40 cursor-default">
-        <div class="service-icon w-12 h-12 rounded-xl bg-green/15 flex items-center justify-center mb-5 text-midgreen">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-        </div>
-        <h3 class="font-bold text-[1.05rem] text-textdark mb-2">Chronic Disease Management</h3>
-        <p class="text-[.9rem] text-textsoft leading-[1.75]">
-          Diabetes, hypertension, thyroid, asthma — we create structured plans
-          to help you manage long-term conditions with confidence and clarity.
-        </p>
-      </div>
-
-      <!-- Service 3 -->
       <div class="service-card bg-pagebg p-8 rounded-2xl border border-divider group transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-green/40 cursor-default">
         <div class="service-icon w-12 h-12 rounded-xl bg-green/15 flex items-center justify-center mb-5 text-midgreen">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
@@ -402,7 +328,7 @@
         </p>
       </div>
 
-      <!-- Service 4 -->
+      <!-- Service 2 -->
       <div class="service-card bg-pagebg p-8 rounded-2xl border border-divider group transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-green/40 cursor-default">
         <div class="service-icon w-12 h-12 rounded-xl bg-green/15 flex items-center justify-center mb-5 text-midgreen">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
@@ -414,19 +340,8 @@
         </p>
       </div>
 
-      <!-- Service 5 -->
-      <div class="service-card bg-pagebg p-8 rounded-2xl border border-divider group transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-green/40 cursor-default">
-        <div class="service-icon w-12 h-12 rounded-xl bg-green/15 flex items-center justify-center mb-5 text-midgreen">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
-        </div>
-        <h3 class="font-bold text-[1.05rem] text-textdark mb-2">Diagnostic Services</h3>
-        <p class="text-[.9rem] text-textsoft leading-[1.75]">
-          In-clinic diagnostic tests, blood work, ECG, and referrals to specialists
-          — all coordinated efficiently so you get answers fast.
-        </p>
-      </div>
 
-      <!-- Service 6 -->
+      <!-- Service 3 -->
       <div class="service-card bg-pagebg p-8 rounded-2xl border border-divider group transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-green/40 cursor-default">
         <div class="service-icon w-12 h-12 rounded-xl bg-green/15 flex items-center justify-center mb-5 text-midgreen">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
@@ -445,7 +360,7 @@
 <!-- ═══════════════════════════════════════
      QUOTE BANNER
 ═══════════════════════════════════════ -->
-<section id="quote" class="py-20 bg-green">
+<section id="quote" class="py-20 bg-[#1B5E20]">
   <div class="max-w-328 mx-auto px-6 md:px-12">
     <div class="max-w-208 mx-auto text-center">
       <div class="font-black text-[5rem] leading-[.75] text-white/20 mb-2">"</div>
@@ -456,7 +371,7 @@
         That is the care I am committed to providing at Balaji Clinic.
       </p>
       <div class="text-white/80 font-semibold text-[.95rem]">
-        — <span class="italic font-bold text-white">Dr. Deepak Powar, MD</span> &nbsp;·&nbsp; Founder, Balaji Clinic
+        — <span class="italic font-bold text-white">Dr. Deepak Powar, BAMS</span> &nbsp;·&nbsp; Founder, Swami Samarth Clinic
       </div>
     </div>
   </div>
@@ -547,87 +462,6 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════
-     FAQ
-═══════════════════════════════════════ -->
-<section id="faq" class="py-24 bg-white">
-  <div class="max-w-328 mx-auto px-6 md:px-12">
-    <div class="text-center max-w-xl mx-auto mb-14">
-      <p class="text-[.72rem] font-bold tracking-[.14em] uppercase text-green mb-3">FAQ</p>
-      <h2 class="font-black text-[clamp(1.7rem,3vw,2.6rem)] leading-tight text-textdark mb-4 tracking-tight">Common Questions</h2>
-      <p class="text-[1rem] text-textsoft leading-[1.8]">Don't see your question? Give us a call — we're always happy to help.</p>
-    </div>
-
-    <div class="max-w-200 mx-auto divide-y divide-divider">
-
-      <div class="faq-item">
-        <button class="w-full bg-transparent border-none cursor-pointer flex items-center justify-between py-5 text-left font-bold text-[1rem] text-textdark hover:text-green transition-colors duration-200" onclick="toggleFaq(this)">
-          Are you currently accepting new patients?
-          <div class="faq-arrow shrink-0 w-6 h-6 border-2 border-divider rounded-full flex items-center justify-center">
-            <svg class="w-3 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-        </button>
-        <div class="faq-a text-[.95rem] text-textsoft leading-[1.8]" style="max-height:0">
-          Yes! Balaji Clinic is currently welcoming new patients of all ages.
-          You can book online using the form below or call our clinic directly and our team will set you up quickly.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="w-full bg-transparent border-none cursor-pointer flex items-center justify-between py-5 text-left font-bold text-[1rem] text-textdark hover:text-green transition-colors duration-200" onclick="toggleFaq(this)">
-          Can I get a same-day appointment?
-          <div class="faq-arrow shrink-0 w-6 h-6 border-2 border-divider rounded-full flex items-center justify-center">
-            <svg class="w-3 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-        </button>
-        <div class="faq-a text-[.95rem] text-textsoft leading-[1.8]" style="max-height:0">
-          We reserve slots every morning for urgent and same-day visits. If you're unwell, please call early
-          and we'll do our best to see you the same day. You shouldn't have to wait when you're not feeling well.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="w-full bg-transparent border-none cursor-pointer flex items-center justify-between py-5 text-left font-bold text-[1rem] text-textdark hover:text-green transition-colors duration-200" onclick="toggleFaq(this)">
-          Do you treat children and elderly patients?
-          <div class="faq-arrow shrink-0 w-6 h-6 border-2 border-divider rounded-full flex items-center justify-center">
-            <svg class="w-3 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-        </button>
-        <div class="faq-a text-[.95rem] text-textsoft leading-[1.8]" style="max-height:0">
-          Absolutely. Balaji Clinic is a family practice serving patients from newborns to seniors.
-          Dr. Powar has extensive experience and a gentle approach when working with children and elderly patients.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="w-full bg-transparent border-none cursor-pointer flex items-center justify-between py-5 text-left font-bold text-[1rem] text-textdark hover:text-green transition-colors duration-200" onclick="toggleFaq(this)">
-          How long does a first appointment take?
-          <div class="faq-arrow shrink-0 w-6 h-6 border-2 border-divider rounded-full flex items-center justify-center">
-            <svg class="w-3 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-        </button>
-        <div class="faq-a text-[.95rem] text-textsoft leading-[1.8]" style="max-height:0">
-          First appointments are typically 30–45 minutes. Dr. Powar dedicates enough time to properly
-          understand your health history and concerns. Follow-up visits are usually 15–20 minutes.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="w-full bg-transparent border-none cursor-pointer flex items-center justify-between py-5 text-left font-bold text-[1rem] text-textdark hover:text-green transition-colors duration-200" onclick="toggleFaq(this)">
-          Is telehealth / online consultation available?
-          <div class="faq-arrow shrink-0 w-6 h-6 border-2 border-divider rounded-full flex items-center justify-center">
-            <svg class="w-3 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-        </button>
-        <div class="faq-a text-[.95rem] text-textsoft leading-[1.8]" style="max-height:0">
-          Yes, we offer phone and video consultations for follow-ups and minor concerns.
-          Contact our clinic to schedule a telehealth appointment and we'll guide you through the process.
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 <!-- ═══════════════════════════════════════
      CONTACT & APPOINTMENT FORM
@@ -654,9 +488,9 @@
         <div>
           <div class="font-bold text-[1rem] text-textdark mb-1">Our Location</div>
           <p class="text-[.92rem] text-textsoft leading-[1.78]">
-            Plot No. 12, Shivaji Nagar<br />
-            Pune, Maharashtra 411005<br />
-            <span class="text-[.82rem]">Near Shivaji Park, Parking Available</span>
+            Mudshingi, Hatkanangale<br />
+            Kolhapur, Maharashtra 416118<br />
+            <span class="text-[.82rem]">Parking Available</span>
           </p>
         </div>
       </div>
@@ -669,8 +503,8 @@
         <div>
           <div class="font-bold text-[1rem] text-textdark mb-1">Phone & Email</div>
           <p class="text-[.92rem] text-textsoft leading-[1.78]">
-            <a href="tel:02012345678" class="text-textsoft no-underline hover:text-green transition-colors">(020) 1234-5678</a><br />
-            <a href="mailto:info@balajiclinic.com" class="text-textsoft no-underline hover:text-green transition-colors">info@balajiclinic.com</a>
+            <a href="#" class="text-textsoft no-underline hover:text-green transition-colors">+91 9022915868</a><br />
+            <a href="mailto:deepakpowar2018@gmail.com" class="text-textsoft no-underline hover:text-green transition-colors">deepakpowar2018@gmail.com</a>
           </p>
         </div>
       </div>
@@ -683,9 +517,9 @@
         <div>
           <div class="font-bold text-[1rem] text-textdark mb-1">Clinic Hours</div>
           <p class="text-[.92rem] text-textsoft leading-[1.78]">
-            Monday – Saturday &nbsp;·&nbsp; 9:00 AM – 8:00 PM<br />
-            Sunday &nbsp;·&nbsp; 10:00 AM – 2:00 PM<br />
-            <span class="text-[.82rem] text-green font-semibold">Emergency consultations available 24/7</span>
+            Monday – Saturday &nbsp;·&nbsp; 10:00 AM – 9:00 PM<br />
+            Sunday &nbsp;·&nbsp; 10:00 PM – 2:00 PM<br />
+            <span class="text-[.82rem] text-darkgreen font-semibold">Emergency consultations available 24/7</span>
           </p>
         </div>
       </div>
@@ -707,7 +541,7 @@
             </div>
             <div>
               <label class="block text-[.82rem] font-bold text-textdark mb-1.5" for="lname">Last Name *</label>
-              <input id="lname" type="text" placeholder="Sharma" required
+              <input id="lname" type="text" placeholder="Powar" required
                      class="w-full border border-divider rounded-lg bg-pagebg px-4 py-3 text-sm text-textdark font-sans outline-none transition-all duration-200 hover:border-green/60" />
             </div>
           </div>
@@ -730,10 +564,8 @@
               <option value="">Select a service...</option>
               <option>General Consultation</option>
               <option>Preventive Check-Up</option>
-              <option>Chronic Disease Management</option>
               <option>Urgent / Same-Day Visit</option>
               <option>Pediatric Care</option>
-              <option>Diagnostic Tests</option>
               <option>Telehealth Consultation</option>
             </select>
           </div>
@@ -746,7 +578,7 @@
 
           <button type="submit" onclick="ripple(event,this)"
                   class="relative overflow-hidden w-full h-[3.2rem] rounded-lg bg-darkgreen text-white border-none font-bold text-base cursor-pointer transition-all duration-200 hover:bg-midgreen active:scale-[.97] shadow-sm">
-            Send My Request
+            Send Request
           </button>
           <p class="text-[.75rem] text-textsoft text-center mt-4">
             We respond within one business day. &nbsp;|&nbsp;
@@ -773,6 +605,8 @@
   </div>
 </section>
 
+<a href="https://wa.me/919022915868" class="fixed z-50 bg-green-400 text-white bottom-2  right-4"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"  alt="" class="h-14 transform transition duration-300 hover:translate-y-4"></a>
+
 <!-- ═══════════════════════════════════════
      FOOTER
 ═══════════════════════════════════════ -->
@@ -786,10 +620,10 @@
           <div class="w-8 h-8 rounded-lg bg-green flex items-center justify-center">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
           </div>
-          <span class="font-bold text-[1.1rem]">Balaji Clinic</span>
+          <span class="font-bold text-[1.1rem]">Swami Samarth Clinic</span>
         </div>
         <p class="text-white/55 text-sm leading-[1.75] max-w-88">
-          Compassionate, personalized healthcare in Pune.
+          Compassionate, personalized healthcare in Kolhapur.
           Your health is our mission — because you deserve a doctor who truly cares.
         </p>
         <div class="flex gap-3 mt-5">
@@ -813,7 +647,6 @@
           <li><button class="text-sm text-white/50 bg-transparent border-none cursor-pointer p-0 hover:text-green transition-colors duration-200" onclick="goTo('about')">About Dr. Powar</button></li>
           <li><button class="text-sm text-white/50 bg-transparent border-none cursor-pointer p-0 hover:text-green transition-colors duration-200" onclick="goTo('services')">Services</button></li>
           <li><button class="text-sm text-white/50 bg-transparent border-none cursor-pointer p-0 hover:text-green transition-colors duration-200" onclick="goTo('testimonials')">Patient Stories</button></li>
-          <li><button class="text-sm text-white/50 bg-transparent border-none cursor-pointer p-0 hover:text-green transition-colors duration-200" onclick="goTo('faq')">FAQ</button></li>
           <li><button class="text-sm text-white/50 bg-transparent border-none cursor-pointer p-0 hover:text-green transition-colors duration-200" onclick="goTo('contact')">Book a Visit</button></li>
         </ul>
       </div>
@@ -832,134 +665,13 @@
     </div>
 
     <div class="pt-6 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3 text-[.8rem] text-white/35">
-      <span>&copy; <span id="yr"></span> Dr. Deepak Powar, MD &nbsp;&middot;&nbsp; Balaji Clinic, Pune &nbsp;&middot;&nbsp; All rights reserved.</span>
+      <span>&copy; <span id="yr"></span> Dr. Deepak Powar, BAMS &nbsp;&middot;&nbsp; Swami Samarth Clinic, Mudshingi &nbsp;&middot;&nbsp; All rights reserved.</span>
       <span>Made with care for your health</span>
     </div>
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════════
-     JAVASCRIPT
-═══════════════════════════════════════ -->
-<script>
-  /* Year */
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  /* Smooth scroll */
-  function goTo(id) {
-    const el = document.getElementById(id);
-    if (!el) return;
-    const offset = el.getBoundingClientRect().top + window.scrollY - 72;
-    window.scrollTo({ top: offset, behavior: 'smooth' });
-  }
-
-  /* Navbar scroll behaviour */
-  const nav      = document.getElementById('nav');
-  const navLinks = document.querySelectorAll('.nav-link');
-  const sections = ['home','stats','about','how','services','quote','testimonials','faq','contact'];
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-      nav.classList.add('shadow-md', '!py-3', 'border-divider');
-    } else {
-      nav.classList.remove('shadow-md', '!py-3', 'border-divider');
-    }
-
-    let active = 'home';
-    sections.forEach(id => {
-      const el = document.getElementById(id);
-      if (el && el.getBoundingClientRect().top <= 100) active = id;
-    });
-    navLinks.forEach(l => {
-      const isActive = l.dataset.sec === active;
-      l.classList.toggle('active', isActive);
-    });
-  });
-
-  /* Mobile menu */
-  const ham     = document.getElementById('ham');
-  const mobMenu = document.getElementById('mobile-menu');
-  const bars    = ham.querySelectorAll('span');
-
-  function toggleMenu() {
-    const open = ham.classList.toggle('open');
-    bars[0].style.transform = open ? 'translateY(6.5px) rotate(45deg)' : '';
-    bars[1].style.opacity   = open ? '0' : '1';
-    bars[2].style.transform = open ? 'translateY(-6.5px) rotate(-45deg)' : '';
-    mobMenu.classList.toggle('translate-x-full', !open);
-    document.body.style.overflow = open ? 'hidden' : '';
-  }
-
-  /* Ripple effect */
-  function ripple(e, btn) {
-    const r  = btn.getBoundingClientRect();
-    const sp = document.createElement('span');
-    sp.className = 'absolute rounded-full bg-white/30 w-5 h-5 pointer-events-none animate-ripple';
-    sp.style.left = (e.clientX - r.left - 10) + 'px';
-    sp.style.top  = (e.clientY - r.top  - 10) + 'px';
-    btn.appendChild(sp);
-    setTimeout(() => sp.remove(), 700);
-  }
-
-  /* FAQ accordion */
-  function toggleFaq(btn) {
-    const item    = btn.parentElement;
-    const wasOpen = item.classList.contains('open');
-
-    document.querySelectorAll('.faq-item').forEach(i => {
-      i.classList.remove('open');
-      i.querySelector('.faq-a').style.maxHeight     = '0';
-      i.querySelector('.faq-a').style.paddingBottom  = '0';
-      i.querySelector('.faq-arrow').style.background  = '';
-      i.querySelector('.faq-arrow').style.borderColor = '';
-      i.querySelector('.faq-arrow svg').style.transform = '';
-    });
-
-    if (!wasOpen) {
-      item.classList.add('open');
-      const ans = item.querySelector('.faq-a');
-      ans.style.maxHeight     = ans.scrollHeight + 'px';
-      ans.style.paddingBottom = '1.25rem';
-      item.querySelector('.faq-arrow').style.background  = '#4CAF50';
-      item.querySelector('.faq-arrow').style.borderColor = '#4CAF50';
-      item.querySelector('.faq-arrow svg').style.transform = 'rotate(180deg)';
-    }
-  }
-
-  /* Form submit */
-  function submitForm(e) {
-    e.preventDefault();
-    document.getElementById('form-wrap').style.display = 'none';
-    const ok = document.getElementById('form-ok');
-    ok.classList.remove('hidden');
-    ok.classList.add('flex');
-  }
-
-  function resetForm() {
-    document.getElementById('appt-form').reset();
-    document.getElementById('form-wrap').style.display = '';
-    const ok = document.getElementById('form-ok');
-    ok.classList.add('hidden');
-    ok.classList.remove('flex');
-  }
-
-  /* Scroll reveal */
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.opacity    = '1';
-        entry.target.style.transform  = 'translateY(0)';
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
-  document.querySelectorAll('.service-card, .faq-item').forEach(el => {
-    el.style.opacity   = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(el);
-  });
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
